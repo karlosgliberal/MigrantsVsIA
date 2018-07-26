@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Migrante route Death </title>
+
+  <script src="lib/p5.min.js"></script>
+  <script src="lib/p5.dom.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.0.3/dist/ml5.js"></script>
+  <!-- p5 -->
+
+  <!-- Mappa -->
+  <script src="lib/mappa.js"></script>
+
+  <style>
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+  button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  button:hover {
+    background-color: #ccc; /* Green */
+  }
+  </style>
+
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <div id="mapas"></div>
+
+  <button id="generate">generate</button>
+  <p id="status">Loading Model</p>
+  <p id="result"></p>
+</body>
+
+</html>
