@@ -11,6 +11,9 @@
   <script src="lib/p5.dom.min.js"></script>
   <script src="https://unpkg.com/ml5@0.0.3/dist/ml5.js"></script>
   <!-- p5 -->
+  <!-- styles -->
+  <link type="text/css" rel="stylesheet" href="/css/styles.css">
+  <!-- styles -->
 
   <!-- Mappa -->
   <script src="lib/mappa.js"></script>
@@ -20,30 +23,103 @@
     margin: 0px;
     padding: 0px;
   }
+
   button {
-    background-color: #4CAF50; /* Green */
+    background-color: #23606F;
     border: none;
     color: white;
-    padding: 15px 32px;
+        padding: 15px 75px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 17px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-top: 25px;
+
   }
   button:hover {
-    background-color: #ccc; /* Green */
+    background-color: #28ACCC;
+    opacity: 0.8;
   }
+
+  .home--title {
+    width: 12%;
+    position: absolute;
+    z-index: 11111111;
+    right: 0;
+    padding: 20px 10px;
+  }
+
+  .home--generate {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid #363c3e;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:rgba(0, 0, 0, 0.5);">
+    padding: 20px 0px;
+    z-index: 11111111111;
+  }
+
+  .home--generate__text {
+    position: absolute;
+    left: 0;
+    bottom: 95px;
+    width: 100%;
+    height: 50px;
+
+    color: white;
+    padding: 10px 20px;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  p {
+    margin-top: 5px;
+  }
+
   </style>
+
 
 </head>
 
 <body>
   <script src="script.js"></script>
-  <div id="mapas"></div>
+  <div class="home--title">
 
-  <button id="generate">generate</button>
-  <p id="status">Loading Model</p>
-  <p id="result"></p>
+
+  </div>
+  <div id="mapas"></div>
+  <div class="home--generate__text">
+    <svg width="195px" height="18px" viewBox="0 0 195 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs></defs>
+        <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-807.000000, -165.000000)" font-family="ProximaNova-Bold, Proxima Nova" font-size="25" font-weight="bold">
+            <text id="MIGRANTS-VS-IA" fill="#FFFFFF">
+                <tspan x="806.05" y="182">MIGRANTS VS IA</tspan>
+            </text>
+        </g>
+    </svg>
+    <p id="status">Loading Model</p>  <p id="result"></p>
+  </div>
+  <div class="home--generate">
+
+    <div>
+      <button id="generate">generate</button>
+
+    </div>
+
+
+
+  </div>
+
 </body>
 
 </html>
